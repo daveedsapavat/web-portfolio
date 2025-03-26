@@ -21,7 +21,7 @@ function Home() {
         <img src={profilePic} alt="Profile" className="home-profile-pic" />
         <h1 className="home-title">Hi, I'm Daveed Sapavat</h1>
         <p className="home-subtitle">Full Stack Developer | Tech Enthusiast | Dreamer</p>
-        <Link to="/projects" className="explore-btn">Explore My Work</Link>
+        <Link to="Projects" className="explore-btn">Explore My Work</Link>
       </div>
     </section>
   );
