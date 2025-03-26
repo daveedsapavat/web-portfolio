@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from "../src/Components/About";
 import Contact from "../src/Components/Contact";
 import Projects from "../src/Components/Projects";
@@ -14,11 +14,11 @@ import Home from './Components/Home';
 function App() {
   return (
     <div>
-    <Router basename='/https://daveedsapavat.github.io/web-portfolio.github.io/'> 
-    <BrowserRouter basename='/https://daveedsapavat.github.io/web-portfolio.github.io/'> </BrowserRouter>
+    <Router > 
+   
       <Navbar/>
 
-        <Routes>  
+        <Routes basename="/">  
           {/* <Route path="/"  /> */}
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
