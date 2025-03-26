@@ -1,0 +1,129 @@
+/* Contact Section */
+.contact-section {
+  margin-top: 50px;
+    position: relative;
+    min-height: 100vh;
+    background: radial-gradient(circle at bottom, #0d1b2a, #000814);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    overflow: hidden;
+  }
+  
+  /* Stars Background */
+  .contact-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.3;
+    animation: twinkle 10s infinite;
+    z-index: -3;
+  }
+  
+  /* Twinkle Animation */
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.5; }
+  }
+  
+  /* Contact Heading */
+  .contact-heading {
+    font-size: 2.5rem;
+    color: #b19cd9;
+    margin-bottom: 40px;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border: 2px solid #b19cd9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Label */
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #b19cd9;
+    font-size: 1rem;
+  }
+  
+  /* Input & Textarea */
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #b19cd9;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: white;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Hover Effect */
+  .form-group input:hover,
+  .form-group textarea:hover {
+    border-color: #d6b5ff;
+    box-shadow: 0 0 10px #b19cd9;
+  }
+  
+  /* Focus Effect */
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #d6b5ff;
+    box-shadow: 0 0 15px #d6b5ff;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #000814;
+    background: #b19cd9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  /* Hover Effect */
+  .submit-btn:hover {
+    background: #d6b5ff;
+    transform: scale(1.05);
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .contact-form {
+      width: 90%;
+    }
+  }
+  

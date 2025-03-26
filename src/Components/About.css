@@ -1,0 +1,250 @@
+/* Universe Background */
+.about-section {
+  
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(circle at bottom, #0d1b2a, #000814);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 0.5;
+  animation: zoom 10s infinite alternate ease-in-out;
+}
+
+/* Stars */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  opacity: 0.3;
+  animation: twinkle 10s infinite;
+}
+
+/* Twinkle Animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.5; }
+}
+
+/* Moon */
+.moon {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 30% 30%, #f0e6d2, #c0c0c0);
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+}
+
+/* Jupiter Container */
+.jupiter-container {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  animation: rotateJupiter 20s linear infinite;
+}
+
+/* Rotating Jupiter */
+.jupiter {
+  width: 100%;
+  height: 100%;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupiter_%28transparent%29.png') no-repeat center center/cover;
+  border-radius: 50%;
+}
+
+/* Jupiter Rings */
+.jupiter-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 150px;
+  border: 5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotateX(75deg);
+  animation: rotateRing 30s linear infinite;
+}
+
+/* Jupiter Rotation */
+@keyframes rotateJupiter {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Jupiter Ring Rotation */
+@keyframes rotateRing {
+  from {
+    transform: translate(-50%, -50%) rotateX(75deg) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotateX(75deg) rotate(360deg);
+  }
+}
+
+/* Planets */
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Planet Positions */
+.planet-1 {
+  top: 20%;
+  left: 15%;
+  width: 50px;
+  height: 50px;
+  background: #ff4500;
+}
+
+.planet-2 {
+  bottom: 10%;
+  right: 20%;
+  width: 40px;
+  height: 40px;
+  background: #1e90ff;
+}
+
+.planet-3 {
+  top: 50%;
+  right: 10%;
+  width: 60px;
+  height: 60px;
+  background: #32cd32;
+}
+
+/* About Container */
+.about-container {
+  z-index: 2;
+  color: white;
+  max-width: 600px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 2s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Profile Picture */
+.about-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #b19cd9;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Typewriter Effect */
+.typewriter {
+  font-size: 2.5rem;
+  color: #b19cd9;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #b19cd9;
+  animation: blink 0.75s step-end infinite;
+}
+
+/* Blinking Cursor */
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #b19cd9; }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .moon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .jupiter-container {
+    width: 200px;
+    height: 200px;
+  }
+  /* Resume Button Container */
+.resume-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Rounded Resume Button */
+.resume-button {
+  font-size: large;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  color: #000814;
+  background: #b19cd9;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #b19cd9;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Icon */
+.icon {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+/* Hover Effect */
+.resume-button:hover {
+  background: #d6b5ff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #d6b5ff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .resume-button {
+    font-size: 1rem;
+    padding: 12px 30px;
+  }
+
+  .icon {
+    font-size: 1.1rem;
+  }
+}
+
+}

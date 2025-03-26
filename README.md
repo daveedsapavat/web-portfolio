@@ -1,3 +1,66 @@
+Celestial Portfolio Website
+A stunning personal portfolio website built with React.js and designed with a Celestial Interstellar Theme. This project showcases projects, skills, experiences, certifications, and includes a contact form — all wrapped in a mesmerizing space-themed UI.
+
+Features
+✅ Multi-Page Navigation: Powered by React Router.
+✅ Interstellar Background: Zooming space visuals inspired by the Interstellar movie. 🌌
+✅ Responsive Design: Mobile-friendly UI. 📱
+✅ Skills Section: Highlights tech stack with smooth animations.
+✅ Experience Timeline: Showcases work history with stunning celestial effects.
+✅ Projects Showcase: Project cards with hover effects and smooth animations.
+✅ Certifications: Display of key certifications earned. 🏆
+✅ Contact Form: Functional form for easy communication. 💬
+✅ Resume Download: One-click resume download button with glowing effects. 📥
+✅ Celestial Theme: Stars, planets, and glowing animations create a cosmic feel. 🌠
+
+⚙️ Tech Stack
+Frontend: React.js, CSS
+Routing: React Router
+Icons: React Icons
+Animations: CSS Keyframes
+
+-->Step-by-Step Guide:
+Install Node.js (If Not Installed):
+
+Download and install Node.js from Node.js Official Website.
+
+After installation, verify it with:
+
+bash
+Copy
+Edit
+node -v
+npm -v
+
+navigate to my  GitHub Account (If Not Cloned Yet):
+Link: https://github.com/daveedsapavat
+
+Navigate into project folder:
+clone the project
+
+Install Dependencies:
+npm install 
+npm install react-router-dom
+npm install react-icons
+
+Run bove command to install all required packages with:
+
+bash
+Copy
+Terminal
+
+Run the Project:
+
+
+npm start
+After the server starts, the project will open automatically in your browser at:
+
+url
+http://localhost:3000
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,0 +1,83 @@
+/* Certification Section */
+.certification-section {
+  margin-top: 50px;
+  position: relative;
+  min-height: 100vh;
+  background: url('../assets/space6.jpg');
+  /* background: radial-gradient(circle at bottom, #0d1b2a, #000814); */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  overflow: hidden;
+  z-index: 0.5;
+  animation: zoom 10s infinite alternate ease-in-out;
+}
+
+/* Certification Heading */
+.certification-heading {
+  font-size: 2.5rem;
+  color: #b19cd9;
+  margin-bottom: 40px;
+}
+
+/* Certification Container */
+.certification-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  opacity: 1; /* Immediately visible */
+  transform: translateY(0); /* No scroll effect */
+  transition: none; /* Remove animation */
+}
+
+/* Certification Card */
+.certification-card {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #b19cd9;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.certification-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #b19cd9;
+}
+
+/* Title */
+.certification-card h2 {
+  color: #b19cd9;
+  margin-bottom: 5px;
+}
+
+/* Organization */
+.certification-card h3 {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+/* Date */
+.certification-card .cert-date {
+  color: #d6b5ff;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* Description */
+.certification-card .cert-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .certification-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
