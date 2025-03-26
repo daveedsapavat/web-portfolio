@@ -14,11 +14,11 @@ import Home from './Components/Home';
 function App() {
   return (
     <div>
-    <Router> 
+    <Router basename='/web-portfolio.github.io'> 
       <Navbar/>
 
         <Routes>  
-        <Route path="/"  />
+          {/* <Route path="/"  /> */}
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/projects" element={<Projects/>} />
