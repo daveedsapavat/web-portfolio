@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web-portfolio.github.io/static/css/main.e96be2c8.css",
-    "main.js": "/web-portfolio.github.io/static/js/main.47c8a04d.js",
+    "main.js": "/web-portfolio.github.io/static/js/main.c7f3b696.js",
     "static/media/space3.jpg": "/web-portfolio.github.io/static/media/space3.4debec3b13d73461c38b.jpg",
     "static/media/space.jpg": "/web-portfolio.github.io/static/media/space.d51d0969de6fbdc1d7b1.jpg",
     "static/media/space6.jpg": "/web-portfolio.github.io/static/media/space6.e3a212fb5446404efc83.jpg",
@@ -9,10 +9,10 @@
     "static/media/profile.jpg": "/web-portfolio.github.io/static/media/profile.f8ca81be0ee4208e8a09.jpg",
     "index.html": "/web-portfolio.github.io/index.html",
     "main.e96be2c8.css.map": "/web-portfolio.github.io/static/css/main.e96be2c8.css.map",
-    "main.47c8a04d.js.map": "/web-portfolio.github.io/static/js/main.47c8a04d.js.map"
+    "main.c7f3b696.js.map": "/web-portfolio.github.io/static/js/main.c7f3b696.js.map"
   },
   "entrypoints": [
     "static/css/main.e96be2c8.css",
-    "static/js/main.47c8a04d.js"
+    "static/js/main.c7f3b696.js"
   ]
 }
