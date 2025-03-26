@@ -22,7 +22,7 @@ function Navbar() {
 
         {/* Navigation Links */}
         <ul className={isMobile ? 'nav-menu active' : 'nav-menu'}>
-          <li><Link to="/" onClick={() => setIsMobile(false)}>Home</Link></li>
+          <li><Link to="/home" onClick={() => setIsMobile(false)}>Home</Link></li>
           <li><Link to="/about" onClick={() => setIsMobile(false)}>About</Link></li>
           <li><Link to="/projects" onClick={() => setIsMobile(false)}>Projects</Link></li>
           <li><Link to="/skills" onClick={() => setIsMobile(false)}>Skills</Link></li>
