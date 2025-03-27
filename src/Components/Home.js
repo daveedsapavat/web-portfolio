@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import './Home.css';
 import profilePic from '../assets/profile.jpg'; // Ensure profile picture is in the correct path
-import { Link,  } from 'react-router-dom';
+// import { Link,  } from 'react-router-dom';
 
 
 function Home() {
-
+console.log('home is rendering');
   useEffect(() => {
     console.log("Home component mounted!");
   }, []);
